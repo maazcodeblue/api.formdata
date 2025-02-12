@@ -27,6 +27,7 @@ $imageName= null;
         $image->move('public/images', $imageName);
     } elseif ($request->filled('imageUrl')) {
         $imageUrl = $request->input('imageUrl');
+        
         // Set imageName to the provided URL
         $imageName = $imageUrl;
     }
